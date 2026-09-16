@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interturmas Educação Física UNAMA Gentil - Turma 6NNA</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--escuro:#0A2E1A;--medio:#0F5A2A;--neon:#7ED957;--claro:#F5FBEF}
+body{font-family:'Inter',sans-serif;background:var(--escuro);color:#fff;line-height:1.6}
+.bebas{font-family:'Bebas Neue',sans-serif}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,46,26,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(126,217,87,0.2);padding:12px 24px;display:flex;justify-content:space-between;align-items:center}
+.nav .logo-text{font-family:'Bebas Neue';font-size:22px;letter-spacing:1px}
+.hero{min-height:92vh;background:radial-gradient(ellipse 80% 60% at 50% 0%,#0F5A2A 0%,#0A2E1A 60%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 20px 60px}
+.badge{background:var(--neon);color:var(--escuro);padding:8px 18px;border-radius:100px;font-weight:800;font-size:12px;letter-spacing:0.8px;margin-bottom:18px}
+.logo-circle{width:170px;height:170px;border-radius:50%;background:#fff;border:6px solid var(--neon);display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(126,217,87,0.35);margin-bottom:22px}
+.logo-inner{width:140px;height:140px;border-radius:50%;background:var(--escuro);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Bebas Neue';line-height:0.9;color:#fff}
+h1{font-family:'Bebas Neue';font-size:74px;line-height:0.9;letter-spacing:1px}
+h1 span{color:var(--neon)}
+.sub{font-size:16px;letter-spacing:4px;margin-top:8px;opacity:0.9}
+.datas{margin-top:22px;background:rgba(255,255,255,0.08);border:1px solid rgba(126,217,87,0.25);padding:14px 28px;border-radius:12px;font-size:14px}
+.cta{margin-top:28px;background:var(--neon);color:var(--escuro);padding:15px 38px;border-radius:100px;font-weight:800;font-size:15px;text-decoration:none;display:inline-block;transition:transform .2s}
+.cta:hover{transform:scale(1.05)}
+section{padding:70px 20px;max-width:1120px;margin:0 auto}
+.sec-dark{background:var(--escuro)}
+.sec-light{background:var(--claro);color:var(--escuro)}
+.sec-white{background:#fff;color:var(--escuro)}
+h2{font-family:'Bebas Neue';font-size:44px;margin-bottom:14px}
+h2.dark{color:var(--escuro)} h2.green{color:var(--medio)} h2.white{color:#fff}
+.lead{max-width:780px;font-size:16px;opacity:0.9;line-height:1.7}
+.grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+@media(max-width:900px){.grid6{grid-template-columns:repeat(2,1fr)} h1{font-size:52px}}
+@media(max-width:600px){.grid6{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:16px;padding:26px;text-align:center;border:2px solid #E6F4EA;color:var(--escuro);transition:all .25s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-5px);border-color:var(--neon);box-shadow:0 12px 28px rgba(15,90,42,0.15)}
+.card .icon{font-size:46px;margin-bottom:10px}
+.card h3{font-family:'Bebas Neue';font-size:23px;letter-spacing:0.5px}
+.card .det{font-size:12px;opacity:0.7;margin-top:4px;font-weight:600}
+.card .tag{margin-top:10px;font-size:10px;background:var(--escuro);color:var(--neon);display:inline-block;padding:4px 10px;border-radius:100px;letter-spacing:0.5px}
+.two-col{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;margin-top:24px}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}}
+.box{border-left:4px solid var(--neon);background:rgba(126,217,87,0.12);padding:16px 18px;border-radius:0 12px 12px 0;margin-bottom:14px}
+.box strong{display:block;margin-bottom:4px}
+.insc-box{background:var(--escuro);color:#fff;border-radius:18px;padding:26px;border:1px solid rgba(126,217,87,0.25)}
+.insc-box .pill{background:var(--neon);color:var(--escuro);display:inline-block;padding:6px 14px;border-radius:100px;font-weight:800;font-size:11px;margin-bottom:12px}
+.insc-box h3{font-family:'Bebas Neue';font-size:30px;line-height:1}
+.table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;margin-top:12px}
+.table th{background:var(--escuro);color:#fff;padding:11px;font-size:13px}
+.table td{padding:10px;text-align:center;border-bottom:1px solid #eee;font-size:13px}
+.footer{background:#081F12;padding:42px 20px;text-align:center;color:#A0D68F}
+.footer h3{font-family:'Bebas Neue';font-size:28px;color:#fff;letter-spacing:1px}
+</style>
+</head>
+<body>
+<div class="nav">
+<div class="logo-text">INTERTURMA <span style="color:#7ED957">UNAMA</span></div>
+<div style="font-size:12px;font-weight:700;opacity:0.8">TURMA 6NNA • 19 A 24 OUT</div>
+</div>
+
+<div class="hero">
+<div class="badge">BACHARELADO EM EDUCAÇÃO FÍSICA - UNAMA GENTIL - BELÉM/PA</div>
+<div class="logo-circle"><div class="logo-inner"><div style="font-size:10px;letter-spacing:2px">INTERTURMA</div><div style="font-size:30px;margin:4px 0">🏆</div><div style="font-size:12px">ED. FÍSICA</div><div style="font-size:14px;color:#7ED957;margin-top:2px">UNAMA</div></div></div>
+<h1>INTERTURMAS<br><span>2026</span></h1>
+<div class="sub">ESPORTES COLETIVOS E INDIVIDUAIS</div>
+<div class="datas"><strong>19 A 24 DE OUTUBRO</strong> • UNAMA GENTIL • ORGANIZAÇÃO TURMA 6NNA</div>
+<a href="#participar" class="cta">QUERO PARTICIPAR →</a>
+</div>
+
+<section class="sec-dark">
+<h2 class="white">O QUE É O INTERTURMAS?</h2>
+<p class="lead">O Interturmas tem por finalidade utilizar as práticas esportivas coletivas e individuais como ferramentas de integração, socialização, participação e convivência entre os acadêmicos do curso de Educação Física. Promove ambiente de competição saudável, estimula a participação, favorece o respeito, a cooperação e a troca de experiências, incentiva a prática esportiva no ambiente universitário, proporciona experiências em organização, arbitragem e gestão de eventos, e fortalece o sentimento de pertencimento entre as turmas. Art. 2º e 3º do Regulamento Geral.</p>
+</section>
+
+<section class="sec-light" id="modalidades">
+<h2 class="green">6 MODALIDADES OFICIAIS</h2>
+<p style="opacity:0.8">Todas as disputas nas dependências esportivas da UNAMA Gentil</p>
+<div class="grid6">
+<div class="card"><div class="icon">🏀</div><h3>BASQUETE</h3><div class="det">5 em quadra • Coletiva</div><div class="tag">SEÇÃO I • Art. 78º</div></div>
+<div class="card"><div class="icon">🏐</div><h3>VÔLEI TRADICIONAL</h3><div class="det">6 em quadra • Coletiva</div><div class="tag">SEÇÃO II</div></div>
+<div class="card"><div class="icon">♿</div><h3>VÔLEI SENTADO</h3><div class="det">6 adaptado • Inclusiva</div><div class="tag">SEÇÃO VI</div></div>
+<div class="card"><div class="icon">⚽</div><h3>FUTSAL</h3><div class="det">4 linha + 1 goleiro</div><div class="tag">SEÇÃO V • Art. 152º</div></div>
+<div class="card"><div class="icon">🔥</div><h3>QUEIMADA</h3><div class="det">Equipe • Coletiva</div><div class="tag">SEÇÃO III</div></div>
+<div class="card"><div class="icon">🏓</div><h3>TÊNIS DE MESA</h3><div class="det">Individual • 1x1</div><div class="tag">SEÇÃO IV</div></div>
+</div>
+</section>
+
+<section class="sec-white" id="participar">
+<h2 class="dark">COMO PARTICIPAR</h2>
+<div class="two-col">
+<div>
+<div class="box"><strong>QUEM PODE?</strong>Poderão participar os acadêmicos regularmente vinculados ao curso de Bacharelado em Educação Física da UNAMA Gentil, pertencentes às turmas e semestres inscritos. Art. 9º</div>
+<div class="box"><strong>REPRESENTAÇÃO</strong>Cada turma é uma representação esportiva. Cada acadêmico representa apenas uma única turma durante o evento. Art. 10º e 12º</div>
+<div class="box"><strong>REGRAS DE PARTICIPAÇÃO</strong>Nas modalidades individuais, 1 modalidade por atleta. Nas coletivas, pode participar de mais de uma considerando organização manhã/noite, sem prejudicar andamento. Art. 21º e 22º</div>
+<div class="box"><strong>REPRESENTANTE DE TURMA</strong>Cada turma indica um responsável pela comunicação com a Comissão Organizadora para tabela, horários e comunicados. Art. 14º</div>
+</div>
+<div class="insc-box">
+<div class="pill">INSCRIÇÕES OFICIAIS</div>
+<h3>ATÉ 16 DE OUTUBRO<br><span style="color:#7ED957">ÀS 20H00</span></h3>
+<p style="margin-top:14px;font-size:13px;opacity:0.85;line-height:1.6">Via formulário ou sistema definido pela Comissão Organizadora - Turma 6NNA. Art. 15º e 16º<br><br><strong>Informar:</strong> Nome completo, matrícula acadêmica, turma/semestre, modalidade(s), telefone/contato. Art. 18º<br><br>Alterações após prazo somente com autorização da Comissão. Art. 17º<br>Identificação acadêmica pode ser solicitada. Art. 11º e 19º<br>Inscrição irregular sujeita a exclusão. Art. 20º</p>
+</div>
+</div>
+</section>
+
+<section class="sec-light">
+<h2 class="green">SISTEMA, PONTUAÇÃO E REGRAS</h2>
+<div class="two-col">
+<div>
+<div class="box"><strong>SISTEMA DE COMPETIÇÃO • Art. 29º a 36º</strong>Definido conforme número final de turmas inscritas. Pode ser: confronto direto, grupo único todos contra todos, grupos classificatórios, eliminatório, semifinal e final, ou combinação. Tabela com confrontos, horários, local e ordem será divulgada. Presença com 15min de antecedência mínima. Tolerância 05/10 minutos. Não comparecimento resulta em W.O.</div>
+<div class="box"><strong>ARBITRAGEM • Art. 44º a 48º</strong>Conduzida por árbitros e acadêmicos designados. Compete conduzir partidas, aplicar regras específicas, registrar resultado e ocorrências, interromper por risco. Decisões de jogo devem ser respeitadas. Proibida intimidação, ameaça ou ofensa à arbitragem.</div>
+<div class="box"><strong>UNIFORMES • Art. 49º a 53º</strong>Vestimenta adequada à prática esportiva, identificação visual semelhante por turma quando possível, roupa e calçado adequados obrigatórios. Proibido objetos de risco: acessórios rígidos, cortantes, correntes.</div>
+</div>
+<div>
+<div style="background:#fff;border-radius:14px;padding:18px;border:2px solid #E6F4EA">
+<h3 style="font-family:'Bebas Neue';font-size:22px">🏆 TURMA CAMPEÃ GERAL</h3>
+<table class="table"><tr><th>Colocação</th><th>Pontuação</th></tr><tr><td>1º Lugar</td><td><strong>10 pontos</strong></td></tr><tr><td>2º Lugar</td><td><strong>7 pontos</strong></td></tr><tr><td>3º Lugar</td><td><strong>5 pontos</strong></td></tr><tr><td>4º Lugar</td><td><strong>3 pontos</strong></td></tr><tr><td>Participação</td><td>1 ponto</td></tr></table>
+<p style="font-size:11px;opacity:0.7;margin-top:8px">Art. 38º. Pontuação individual vai para turma do atleta. Art. 39º e 40º. Soma de todas modalidades. Art. 41º. Desempate: mais 1º lugares, 2º, 3º, mais modalidades vencidas, confronto e sorteio. Art. 43º</p>
+</div>
+<div style="background:#0A2E1A;color:#fff;border-radius:14px;padding:18px;margin-top:16px">
+<h3 style="font-family:'Bebas Neue';font-size:20px">🛡️ CONDUTA E W.O.</h3>
+<p style="font-size:13px;opacity:0.85;line-height:1.6;margin-top:8px"><strong>Conduta:</strong> Respeito, ética, espírito esportivo e convivência universitária. Infrações: agressão, tentativa de agressão, ameaça, ofensa verbal, discriminação. Art. 59º e 60º<br><br><strong>W.O.:</strong> Não comparecer após tolerância, não apresentar nº mínimo, recusa injustificada, situação irregular, abandono sem autorização. Art. 54º<br><br><strong>Abandono:</strong> Perda da partida, anulação de resultados, perda de pontos, exclusão. Art. 57º e 58º</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="footer">
+<h3>REPRESENTE SUA TURMA!</h3>
+<p style="margin-top:10px">Interturmas Educação Física UNAMA Gentil • 19 a 24 de Outubro • Organização Turma 6NNA<br>Projeto de Extensão • Bacharelado em Educação Física • Belém/PA • VERITAS UNAMA</p>
+<p style="margin-top:14px;font-size:11px;opacity:0.6">Regulamento Geral - Art. 1º ao 8º: Finalidade de integração e organização nas dependências esportivas da UNAMA Gentil. Aceitação do regulamento obrigatória.</p>
+</div>
+</body>
+</html>
